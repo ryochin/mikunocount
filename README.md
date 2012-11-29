@@ -14,7 +14,7 @@
 
 * perl
 
-Windows なら ActivePerl などが使えます。
+Windows なら [ActivePerl](http://www.activestate.com/activeperl/downloads) などが使えます。
 
 また、次の Perl モジュールが必要です。
 

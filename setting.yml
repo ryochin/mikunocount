@@ -3,7 +3,8 @@ board:
   - file:./board/1.html
   - file:./board/2.html
   - file:./board/3.html
-  - http://jbbs.livedoor.jp/bbs/read.cgi/internet/2353/1304336074/2-    # 4th
+  - file:./board/4.html
+  - http://jbbs.livedoor.jp/bbs/read.cgi/internet/2353/1346675227/2-    # 5th
 ignore:
   # コミュニティ関係の動画（ジングル、告知など）
   community:
@@ -61,6 +62,7 @@ ignore:
     - nm9362967
     - sm9539379
     - sm17362874
+    - sm19363621
   # 明らかにおかしいもの
   wrong:
     - sm7382119
