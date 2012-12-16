@@ -14,7 +14,7 @@
 
 * perl
 
-Windows なら [ActivePerl](http://www.activestate.com/activeperl/downloads) などが使えます。
+Windows なら [Strawberry Perl](http://strawberryperl.com/) を入れます。
 
 また、次の Perl モジュールが必要です。
 
@@ -25,10 +25,10 @@ Unix 系 OS なら次のコマンドで導入できます。
 
 	sudo cpan YAML::Syck URI::Fetch
 
-ActivePerl で動かすには、cmd.exe から次のようにしてみてください。
+Strawberry Perl で動かすには、cmd.exe から次のようにして必要なライブラリを入れます。
 
-	ppm install YAML::Syck
-	ppm install URI::Fetch
+	\strawberry\perl\bin\cpan YAML::Syck
+	\strawberry\perl\bin\cpan URI::Fetch
 
 使い方
 -----
@@ -37,7 +37,7 @@ ActivePerl で動かすには、cmd.exe から次のようにしてみてくだ�
 
 同じディレクトリに count.json が保存されます。
 
-Windows (ActivePerl) ならスクリプトをダブルクリックで起動するだけです。
+Windows (Strawberry Perl) ならスクリプトをダブルクリックで起動するだけです。
 
 詳しい使い方
 ----------
