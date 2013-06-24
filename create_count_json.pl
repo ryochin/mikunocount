@@ -193,12 +193,7 @@ sub save_json {
 	$result->{"created-at"} = scalar localtime;
 
 	open my $fh, '>', $json_file or die $!;
-	if( defined $opt->{y} ){
-		$fh->print( YAML::Syck::Dump( $result ) );
-	}
-	else{
-		$fh->print( JSON::Syck::Dump( $result ) );
-	}
+	$fh->print( defined $opt->{y} ? YAML::Syck::Dump( $result ) : JSON::Syck::Dump( $result ) );
 	$fh->close;
 	
 	$class->logit("saved to %s.", $json_file);
