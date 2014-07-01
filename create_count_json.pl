@@ -148,7 +148,7 @@ sub calc_count {
 	my @result;
 	for my $v( sort $sorter keys %{ $count_list } ){
 		# ignore
-		next if $v ~~ @ignore;
+		next if first { $v eq $_ } @ignore;
 		
 		push @result, {
 			id => $v,    # sm1234567

@@ -21,14 +21,13 @@ Windows なら [Strawberry Perl](http://strawberryperl.com/) を入れます。
 * YAML::Syck
 * URI::Fetch
 
+Strawberry Perl で動かすには、`cmd.exe` を起動して次のようにして必要なライブラリを入れます。
+
+	\strawberry\perl\bin\cpan YAML::Syck URI::Fetch
+
 Unix 系 OS なら次のコマンドで導入できます。
 
 	sudo cpan YAML::Syck URI::Fetch
-
-Strawberry Perl で動かすには、cmd.exe から次のようにして必要なライブラリを入れます。
-
-	\strawberry\perl\bin\cpan YAML::Syck
-	\strawberry\perl\bin\cpan URI::Fetch
 
 使い方
 -----
@@ -37,7 +36,7 @@ Strawberry Perl で動かすには、cmd.exe から次のようにして必要�
 
 	perl create_count_json.pl
 
-同じディレクトリに count.json が保存されます。
+同じディレクトリに `count.json` が保存されます。
 
 crontab に仕込むとよいでしょう。
 
@@ -57,7 +56,7 @@ Windows (Strawberry Perl) ならスクリプトをダブルクリックで起動
 運用について
 ----------
 
-設定ファイルは setting.yml です。適宜編集してください。
+設定ファイルは `setting.yml` です。適宜編集してください。
 
 * 掲示板のスレッドが増えたら board に追加します。
 * ジングルなどが増えたら ignore に追加します。

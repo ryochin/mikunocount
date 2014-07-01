@@ -4,7 +4,8 @@ board:
   - file:./board/2.html
   - file:./board/3.html
   - file:./board/4.html
-  - http://jbbs.livedoor.jp/bbs/read.cgi/internet/2353/1346675227/2-    # 5th
+  - file:./board/5.html
+  - http://jbbs.shitaraba.net/bbs/read.cgi/internet/2353/1400414883/4-    # 6th
 ignore:
   # コミュニティ関係の動画（ジングル、告知など）
   community:
