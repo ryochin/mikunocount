@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mikunocount:
+    build: .
+    container_name: mikunocount
+    environment:
+      TZ: Asia/Tokyo
+    volumes:
+      - ./output:/app/output

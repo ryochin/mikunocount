@@ -4,6 +4,14 @@
 手元でミクノ度 JSON ファイルを生成するスクリプトです。  
 旧まとめサイトで運用していたプログラムを全面的に書き直しました。
 
+Docker
+------
+
+Docker が[インストール](https://docs.docker.com/install/)されているなら、これだけで `output/count.json` にファイルが生成されます。
+
+	docker-compose build
+	docker-compose run --rm mikunocount
+
 概要
 ---
 
