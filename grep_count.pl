@@ -10,7 +10,7 @@ $id =~ s{^.+/([\w\d]+)(\?.+|$)}{$1};
 
 $id = sprintf "sm%s", $id if $id =~ /^\d/o;
 
-my $count = eval { JSON::Syck::LoadFile("./count.json") } or YAML::Syck::LoadFile("./count.json") or die "cannot read count.json: $!";
+my $count = eval { JSON::Syck::LoadFile("./output/count.json") } or YAML::Syck::LoadFile("./count.json") or die "cannot read count.json: $!";
 
 printf "%s: %d\n", $id, $count->{ $id } // 0;
 
