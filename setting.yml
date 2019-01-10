@@ -6,7 +6,7 @@ board:
   - file:./board/4.html
   - file:./board/5.html
   - file:./board/6.html
-  - http://jbbs.shitaraba.net/bbs/read.cgi/internet/2353/1524491216/2-    # 7th
+  - https://jbbs.shitaraba.net/bbs/read.cgi/internet/2353/1524491216/2-    # 7th
 ignore:
   # コミュニティ関係の動画（ジングル、告知など）
   community:

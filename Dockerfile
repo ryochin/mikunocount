@@ -5,15 +5,15 @@ WORKDIR $APP_DIR
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
-  perl gcc curl make \
+  perl gcc curl make libssl-dev zlib1g-dev \
   && apt-get clean
 
-RUN curl -L https://cpanmin.us | /usr/bin/perl - App::cpanminus
+RUN curl -L https://cpanmin.us | /usr/bin/perl - App::cpanminus \
+  && /usr/local/bin/cpanm --notest Carton
 
 COPY cpanfile $APP_DIR
 
-RUN /usr/local/bin/cpanm --notest Carton \
-  && /usr/local/bin/carton install \
+RUN /usr/local/bin/carton install \
   && rm -rf /root/.cpanm/
 
 COPY . $APP_DIR
